@@ -1,0 +1,37 @@
+@use "breakpoints.sass.scss" as bp;
+
+@mixin container {
+  width: 100%;
+  max-width: bp.$screen-l-min;
+  margin: 0 auto;
+}
+
+@mixin container-s {
+  @include container;
+  max-width: bp.$screen-s-min;
+}
+
+@mixin container-m {
+  @include container;
+  max-width: bp.$screen-m-min;
+}
+
+@mixin container-l {
+  @include container;
+  max-width: bp.$screen-l-min;
+}
+
+@mixin container-xl {
+  @include container;
+  max-width: bp.$screen-xl-min;
+}
+
+@mixin container-xxl {
+  @include container;
+  max-width: bp.$screen-xxl-min;
+}
+
+@mixin container-b {
+  @include container;
+  max-width: 800px;
+}

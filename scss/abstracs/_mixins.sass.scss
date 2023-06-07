@@ -1,0 +1,54 @@
+@use "breakpoints.sass.scss" as bp;
+
+// Extra Small devices
+@mixin xs {
+  @media (min-width: #{bp.$screen-xs-min}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin s {
+  @media (min-width: #{bp.$screen-s-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin m {
+  @media (min-width: #{bp.$screen-m-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin l {
+  @media (min-width: #{bp.$screen-l-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{bp.$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xxl {
+  @media (min-width: #{bp.$screen-xxl-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (min-width: ($screen + "px")) {
+    @content;
+  }
+}
+
+@function vh($quantity, $extra) {
+  @return calc((var(--vh, 1vh) * #{$quantity}) - #{$extra});
+}
