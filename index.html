@@ -151,17 +151,16 @@
         Alguna pregunta ó solo quieres decir hola? Adelante
       </p>
       <div class="contact-container">
-        <form action="index.html">
           <div class="form">
             <div class="form-row">
               <div class="form-field">
                 <label for="fname">Name</label>
-                <input type="text" name="fname">
+                <input type="text" name="name" id="name">
               </div>
     
               <div class="form-field">
-                <label for="email">email</label>
-                <input type="text" name="email">
+                <label for="email" id="email">email</label>
+                <input type="text" name="email" id="email">
               </div>
             </div>
     
@@ -169,15 +168,22 @@
               <label for="message">Message</label>
               <textarea name="message" id="fmessage"></textarea>
             </div>
-            <button type="submit" class="form-submit">Enviar</button>
+            <button type="submit" class="form-submit" onclick="sendMail()">Enviar</button>
           </div>
-        </form>
       </div>
     </section>
   </main>
   <section class="footer"></section>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/form.js"></script>
+  <script type="text/javascript">
+    (function(){
+       emailjs.init("gkhiavhaLNGpiUwgC");
+    })();
+ </script>
+
 </body>
 
 </html>
