@@ -46,6 +46,9 @@ header{
   @include a.m{
     width: 100%;
     padding: 0 120px;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
   }
 }
 
