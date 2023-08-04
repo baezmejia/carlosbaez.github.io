@@ -493,6 +493,13 @@ header{
 .footer{
   margin-top: 100px;
   width: 100%;
-  height: 40px;
+  padding: 10px 0;
   background: a.$light-blue;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+
+  p{
+    margin: 0;
+  }
 }
